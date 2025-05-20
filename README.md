@@ -45,6 +45,10 @@ It uses Android's built-in notification system to trigger the alarm, which means
 
 - licensed under the [GPL 3+](https://www.gnu.org/licenses/gpl.html)
 
+## More documentation
+
+For additional usage tips and advanced configuration options, see [docs/advanced_usage.md](docs/advanced_usage.md).
+
 ## Credits
 
 Some code is based on the free and open source [TeaTimer by Ralph Gootee](https://play.google.com/store/apps/details?id=goo.TeaTimer).

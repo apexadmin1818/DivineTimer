@@ -24,6 +24,8 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.constraintlayout.widget.Group
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import androidx.preference.PreferenceManager
@@ -66,6 +68,9 @@ class TimerActivity : AppCompatActivity(), View.OnClickListener, OnSharedPrefere
     private lateinit var mTimerAnimation: TimerAnimation
     private lateinit var mTimerLabel: TextView
     private lateinit var mPreviewLabel: TextView
+    private lateinit var mBottomNavigation: com.google.android.material.bottomnavigation.BottomNavigationView
+    private lateinit var mTimerGroup: androidx.constraintlayout.widget.Group
+    private lateinit var mInfoView: View
 
     var mAlarmTaskManager: AlarmTaskManager? = null
 
@@ -153,6 +158,30 @@ class TimerActivity : AppCompatActivity(), View.OnClickListener, OnSharedPrefere
         mTimerAnimation = findViewById(R.id.mainImage)
         mTimerAnimation.setOnClickListener(this)
         animationIndex = Settings.drawingIndex
+
+        mBottomNavigation = findViewById(R.id.bottom_navigation)
+        mTimerGroup = findViewById(R.id.timer_group)
+        mInfoView = findViewById(R.id.info_view)
+
+        mBottomNavigation.selectedItemId = R.id.nav_timer
+        mTimerGroup.visibility = View.VISIBLE
+        mInfoView.visibility = View.GONE
+
+        mBottomNavigation.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.nav_timer -> {
+                    mTimerGroup.visibility = View.VISIBLE
+                    mInfoView.visibility = View.GONE
+                    true
+                }
+                R.id.nav_info -> {
+                    mTimerGroup.visibility = View.GONE
+                    mInfoView.visibility = View.VISIBLE
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     private fun setupObservers() {
