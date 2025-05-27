@@ -168,6 +168,11 @@
     <string name="service_text">This notification ensures correct playback of your timer tones</string>
     <string name="use_old_notification">Use old Notification Method</string>
     <string name="use_old_notification_desc">If you experience crashes or unreliable alarms, try to check this.</string>
+    <string name="tab_timer">Timer</string>
+    <string name="tab_info">Info</string>
+    <string name="info_paragraphs">Before using the timer, please read these instructions carefully.&#10;&#10;Make sure the device is not in silent mode and set your desired preferences.</string>
+
+
 </resources>
 
 
