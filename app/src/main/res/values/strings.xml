@@ -169,8 +169,15 @@
     <string name="use_old_notification">Use old Notification Method</string>
     <string name="use_old_notification_desc">If you experience crashes or unreliable alarms, try to check this.</string>
     <string name="tab_timer">Timer</string>
-    <string name="tab_info">Info</string>
-    <string name="info_paragraphs">Before using the timer, please read these instructions carefully.&#10;&#10;Make sure the device is not in silent mode and set your desired preferences.</string>
+    <string name="tab_info">Prayer</string>
+  <string name="info_paragraphs">
+FATHER-MOTHER-LIFE\n\n
+You are my life, my constant support, my health, my protection, my perfect fulfilment of every need and my highest inspiration.\n\n
+I ask you to reveal the true Reality of Yourself to me. I know it is your WILL that I shall be fully illumined that I m­ay better receive awareness of Your Presence within and around me. I believe and know that this is possible. I believe that you protect and maintain me within perfect LOVE. I know that my eventual purpose is to EXPRESS YOU.\n\n
+As I speak to you, I know that you are perfectly receptive of me, for you are UNIVERSAL LOVING INTELLIGENCE which has so marvelously designed this world and brought it into visible form.\n\n
+I know, that as I ask YOU to speak to me, I am sending out a consciousness searchlight into your Divine Consciousness and as I listen, YOU will be penetrating my human consciousness and coming ever closer to my increasingly receptive mind and heart.\n\n
+I commit myself and my life into your care.
+</string>
 
 
 </resources>
