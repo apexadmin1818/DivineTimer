@@ -1,7 +1,8 @@
 # About
 Divine Timer is an elegant, minimalist countdown timer.
+A navigation tab with The Christ Prayer has been added to prime the mind to reach out to Divine Consciousness during your meditation.
 It is designed mainly for use as a meditation timer but can easily be used for any similar purpose.
-This app is free and developed as [open-source](https://github.com/yuttadhammo/BodhiTimer) software. 
+This app is free and developed as open-source software. 
 It collects no data and uses the minimal permissions necessary.
 
 
