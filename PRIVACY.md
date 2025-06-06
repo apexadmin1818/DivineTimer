@@ -1,7 +1,7 @@
 
 ## Privacy policy
 
-**Bodhi Timer does not collect, log or share your personal information.**
+**Divine Timer does not collect, log or share your personal information.**
 
 
 The timer stores your settings on the device, they are never uploaded or shared anywhere.

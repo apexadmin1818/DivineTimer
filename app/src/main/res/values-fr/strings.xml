@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Bodhi Timer</string>
+    <string name="app_name">Divine Timer</string>
     <string name="Stop">Effacer</string>
 
     <string name="prefs">Préférences</string>
@@ -20,7 +20,7 @@
     <!-- About -->
     <string name="close">Fermer</string>
     <string name="about">À propos</string>
-    <string name="about_title">À propos de Bodhi Timer</string>
+    <string name="about_title">À propos de Divine Timer</string>
     <string name="NoVoiceRecognitionInstalled">Veuillez installer une application de reconnaissance vocale !</string>
 
     </resources>

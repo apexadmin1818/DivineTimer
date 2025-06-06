@@ -22,6 +22,7 @@ import org.yuttadhammo.BodhiTimer.Const.TimerState.STOPPED
 import org.yuttadhammo.BodhiTimer.Const.TimerState.getText
 import org.yuttadhammo.BodhiTimer.Service.SoundService
 import org.yuttadhammo.BodhiTimer.Util.Settings
+import org.yuttadhammo.BodhiTimer.Util.MeditationLog
 import org.yuttadhammo.BodhiTimer.Util.Time
 import timber.log.Timber
 import java.util.Date
@@ -465,6 +466,8 @@ class AlarmTaskManager(private val mApp: Application) : AndroidViewModel(mApp) {
 
         // Update labels
         if (alarms.empty()) {
+            // Log session if it was at least ten minutes
+            MeditationLog.logSession(sessionDuration)
             stopAlarmsAndTicker()
             loadLastTimers()
             // Reschedule alarms in case AutoRestart is active

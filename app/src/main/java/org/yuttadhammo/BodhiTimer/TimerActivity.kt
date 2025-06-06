@@ -1,6 +1,6 @@
 /*
  * TimerActivity.kt
- * Copyright (C) 2014-2022 BodhiTimer developers
+ * Copyright (C) 2014-2022 DivineTimer developers
  *
  * Distributed under terms of the GNU GPLv3 license.
  */
@@ -40,6 +40,7 @@ import org.yuttadhammo.BodhiTimer.Models.TimerList
 import org.yuttadhammo.BodhiTimer.Util.Notifications.createNotificationChannel
 import org.yuttadhammo.BodhiTimer.Util.Settings
 import org.yuttadhammo.BodhiTimer.Util.Themes
+import org.yuttadhammo.BodhiTimer.Util.MeditationLog
 import org.yuttadhammo.BodhiTimer.Util.Time
 import org.yuttadhammo.BodhiTimer.Util.Time.msFromArray
 import org.yuttadhammo.BodhiTimer.Util.Time.str2complexTimeString
@@ -71,6 +72,7 @@ class TimerActivity : AppCompatActivity(), View.OnClickListener, OnSharedPrefere
     private lateinit var mBottomNavigation: com.google.android.material.bottomnavigation.BottomNavigationView
     private lateinit var mTimerGroup: androidx.constraintlayout.widget.Group
     private lateinit var mInfoView: View
+    private lateinit var mCalendarView: android.widget.CalendarView
 
     var mAlarmTaskManager: AlarmTaskManager? = null
 
@@ -162,21 +164,40 @@ class TimerActivity : AppCompatActivity(), View.OnClickListener, OnSharedPrefere
         mBottomNavigation = findViewById(R.id.bottom_navigation)
         mTimerGroup = findViewById(R.id.timer_group)
         mInfoView = findViewById(R.id.info_view)
+        mCalendarView = findViewById(R.id.calendar_view)
+
+        mCalendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
+            val cal = java.util.Calendar.getInstance()
+            cal.set(year, month, dayOfMonth, 0, 0, 0)
+            cal.set(java.util.Calendar.MILLISECOND, 0)
+            MeditationLog.toggleDate(cal.timeInMillis)
+            val msg = if (MeditationLog.isLogged(cal.timeInMillis)) R.string.log_added else R.string.log_removed
+            android.widget.Toast.makeText(this, getString(msg), android.widget.Toast.LENGTH_SHORT).show()
+        }
 
         mBottomNavigation.selectedItemId = R.id.nav_timer
         mTimerGroup.visibility = View.VISIBLE
         mInfoView.visibility = View.GONE
+        mCalendarView.visibility = View.GONE
 
         mBottomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_timer -> {
                     mTimerGroup.visibility = View.VISIBLE
                     mInfoView.visibility = View.GONE
+                    mCalendarView.visibility = View.GONE
                     true
                 }
                 R.id.nav_info -> {
                     mTimerGroup.visibility = View.GONE
                     mInfoView.visibility = View.VISIBLE
+                    mCalendarView.visibility = View.GONE
+                    true
+                }
+                R.id.nav_calendar -> {
+                    mTimerGroup.visibility = View.GONE
+                    mInfoView.visibility = View.GONE
+                    mCalendarView.visibility = View.VISIBLE
                     true
                 }
                 else -> false

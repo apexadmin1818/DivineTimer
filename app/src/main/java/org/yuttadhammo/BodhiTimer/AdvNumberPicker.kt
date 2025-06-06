@@ -1,6 +1,6 @@
 /*
  * AdvNumberPicker.java
- * Copyright (C) 2014-2022 BodhiTimer developers
+ * Copyright (C) 2014-2022 DivineTimer developers
  *
  * Distributed under terms of the GNU GPLv3 license.
  */
