@@ -33,7 +33,6 @@ It uses Android's built-in notification system to trigger the alarm, which means
 - option to use any ring tone as timer sound
 - option to use custom sound file as timer sound
 - other apps can start an alarm using a deep link like `bodhi://timer?times=60,120`
-- built-in calendar to track your daily practice; sessions over ten minutes are logged automatically
 
 - licensed under the [GPL 3+](https://www.gnu.org/licenses/gpl.html)
 
