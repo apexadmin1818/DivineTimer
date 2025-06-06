@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Bodhi Timer</string>
+    <string name="app_name">Divine Timer</string>
     <string name="Stop">Zurücksetzen</string>
 
     <string name="Notification">Timer abgelaufen!</string>
@@ -59,13 +59,13 @@
     <string name="stay_awake">Wach bleiben</string>
     <string name="stay_awake_desc">Das Telefon nicht einschlafen lassen.</string>
 
-    <string name="about_desc">Über Bodhi Timer</string>
+    <string name="about_desc">Über Divine Timer</string>
 
 
     <!-- About -->
     <string name="close">Schließen</string>
     <string name="about">Info</string>
-    <string name="about_title">Über Bodhi Timer</string>
+    <string name="about_title">Über Divine Timer</string>
     <string name="set">Setzen</string>
     <string name="pause">Pause</string>
 
