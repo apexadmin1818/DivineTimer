@@ -1,6 +1,6 @@
 # Advanced Usage
 
-This page provides additional information about using Bodhi Timer beyond the basic instructions in the main README.
+This page provides additional information about using Divine Timer beyond the basic instructions in the main README.
 
 ## Voice commands
 

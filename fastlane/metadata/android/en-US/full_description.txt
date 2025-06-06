@@ -1,7 +1,7 @@
 <h1 id="about"><b>About</b></h1>
-<p>Bodhi Timer is an elegant, minimalist countdown timer.
+<p>Divine Timer is an elegant, minimalist countdown timer.
 It is designed mainly for use as a meditation timer but can easily be used for any similar purpose.
-This app is developed as <a href="https://github.com/yuttadhammo/BodhiTimer">open-source</a> software.
+This app is developed as <a href="https://github.com/yuttadhammo/DivineTimer">open-source</a> software.
 It collects no data and uses the minimal permissions necessary.</p>
 
 <h2 id="how-to-use"><b>How to use</b></h2>

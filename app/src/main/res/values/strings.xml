@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Bodhi Timer</string>
+    <string name="app_name">Divine Timer</string>
     <string name="Stop">Clear</string>
-    <string name="Notification">Bodhi Timer Finished</string>
+    <string name="Notification">Divine Timer Finished</string>
     <string name="timer_for_x">Timer for %s</string>
 
     <plurals name="x_hours">
@@ -90,30 +90,30 @@
     <string name="stay_awake_desc">Don\'t allow the phone to go to sleep.</string>
     <string name="switch_time">Switch Time Input Mode</string>
     <string name="switch_time_desc">Clicking on clock opens speech input (otherwise on long-click).</string>
-    <string name="about_desc">About Bodhi Timer</string>
+    <string name="about_desc">About Divine Timer</string>
 
 
     <!-- About -->
     <string name="close">Close</string>
     <string name="about">About</string>
-    <string name="about_title">About Bodhi Timer</string>
+    <string name="about_title">About Divine Timer</string>
     <string name="about_text">
 		<![CDATA[
 		    <style>
 		        a {color: rgb(255,87,34); text-decoration: none;}
 		    </style>
 			<body style="text-align:justify;font-size:16px;">
-				<p><b>Bodhi Timer</b> is an elegant, minimalist countdown timer.  It was designed mainly for use as a meditation timer but can easily be used for any similar purpose.</p>
+				<p><b>Divine Timer</b> is an elegant, minimalist countdown timer.  It was designed mainly for use as a meditation timer but can easily be used for any similar purpose.</p>
 				<p><b>Set the time</b> via the clock button in the top left corner.  You may <b>set presets</b> by choosing a time then holding down on one of the three preset buttons.</p>
 				<p>You may alternatively <b>use speech to set the time</b> by long-pressing the clock button.  These behaviours can be swapped via the preference screen.</p>
 				<p><b>To set multiple consecutive timers</b>, long-click on the "adv" button in the time set screen, then create a list of times, or simply use the speech recognition, separating each time with the word "again". For example, say &quot;<b>thirty minutes again one hour</b>&quot; to set two consecutive timers, first for thirty minutes then for one hour.</p>
 				<p><b>Pause/resume</b> via the buttons in the bottom left corner and stop the timer via the button in the bottom right.  <b>Change preferences</b> via the top-right button.</p>
 				<p>Animation may be toggled between a fade-in Bodhi Leaf or a animated Enso brush drawing, chosen from the preferences screen.  The Bodhi leaf may also be substituted for a custom image via the preferences screen.</p>
 				<p>You may <b>add a timer widget</b> to your desktop via the App Drawer, or on your lockscreen (Android 4.2+).</p>
-				<p><b>Bodhi Timer</b> is free and open source software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version. <b><a href="http://www.gnu.org/licenses/gpl.html">GPL License</a></b></p>
-				<p>Get the latest version of the source code <b><a href="https://github.com/yuttadhammo/BodhiTimer">on GitHub</a></b>.</p>
+				<p><b>Divine Timer</b> is free and open source software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version. <b><a href="http://www.gnu.org/licenses/gpl.html">GPL License</a></b></p>
+				<p>Get the latest version of the source code <b><a href="https://github.com/yuttadhammo/DivineTimer">on GitHub</a></b>.</p>
 				<h4>Credits</h4>
-				<p>Bodhi Timer is a fork of the open source TeaTimer app by Ralph Gootee, which is also available <b><a href="https://github.com/ralphleon/TeaTimer">on GitHub</a></b>.</p>
+				<p>Divine Timer is a fork of the open source TeaTimer app by Ralph Gootee, which is also available <b><a href="https://github.com/ralphleon/TeaTimer">on GitHub</a></b>.</p>
 				<p>The Enso image was drawn by Ryōnen Gensō (1646-1711). Next to the Enso she has written:<br>
                     "When you do understand yourself fully,<br>
                     there is not one thing."<br><br>
@@ -162,14 +162,17 @@
     <string name="show_system_settings_desc">Notifications can be customized in Android System Settings</string>
     <string name="do_not_disturb">Do not Disturb</string>
     <string name="do_not_disturb_desc">Enter "Do Not Disturb" Mode when meditating</string>
-    <string name="open_timer">Open BodhiTimer</string>
+    <string name="open_timer">Open DivineTimer</string>
     <string name="service_channel_name">Service</string>
-    <string name="service_channel_description">Notification that Bodhi Timer is running</string>
+    <string name="service_channel_description">Notification that Divine Timer is running</string>
     <string name="service_text">This notification ensures correct playback of your timer tones</string>
     <string name="use_old_notification">Use old Notification Method</string>
     <string name="use_old_notification_desc">If you experience crashes or unreliable alarms, try to check this.</string>
     <string name="tab_timer">Timer</string>
     <string name="tab_info">Prayer</string>
+    <string name="tab_calendar">Calendar</string>
+    <string name="log_added">Session logged</string>
+    <string name="log_removed">Log removed</string>
   <string name="info_paragraphs">
 FATHER-MOTHER-LIFE\n\n
 You are my life, my constant support, my health, my protection, my perfect fulfilment of every need and my highest inspiration.\n\n
